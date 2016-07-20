@@ -43,5 +43,3 @@ Functions might not expect a filename or dirname to have a trailing slash (e.g.
 C<-d>, C<opendir()>, etc will not work if we add slash to a directory name), but
 shell tab completion usually adds a trailing slash. So this coercion rule
 provides the convenience of stripping the trailing slash for the functions.
-
-=back
