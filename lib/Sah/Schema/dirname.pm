@@ -8,6 +8,7 @@ our $schema = [str => {
     'x.perl.coerce_rules' => [
         'str_strip_trailing_slash',
     ],
+    'x.completion' => ['dirname'],
 }, {}];
 
 1;
