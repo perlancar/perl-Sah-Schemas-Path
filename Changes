@@ -1,25 +1,25 @@
-0.005   2018-06-04 (PERLANCAR)
+0.005   2018-06-04  Released-By: PERLANCAR
 
 	- Update to Data::Sah::Coerce 0.025 (coerce rule module metadata
 	  version 3).
 
 
-0.004   2018-01-14 (PERLANCAR)
+0.004   2018-01-14  Released-By: PERLANCAR
 
         - [build] Rebuild with updated DZP:Sah::Schemas to add prereqs to
           Perinci::Sub::XCompletion::* modules.
 
 
-0.003   2016-07-22 (PERLANCAR)
+0.003   2016-07-22  Released-By: PERLANCAR
 
 	- Add x.completion attribute.
 
 
-0.002   2016-07-22 (PERLANCAR)
+0.002   2016-07-22  Released-By: PERLANCAR
 
 	- [build] Rebuild to generate Sah::SchemaR::* modules.
 
 
-0.001   2016-07-20 (PERLANCAR)
+0.001   2016-07-20  Released-By: PERLANCAR
 
 	- First release.
