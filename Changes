@@ -1,4 +1,14 @@
+0.007   2019-07-12  Released-By: PERLANCAR; Urgency: medium
+
+	- [bugfix] Base {file,dir,path}name::unix on str instead of on
+	  {file,dir,path}name because otherwise we have to provide
+	  {file,dir,path}name::str_strip_slashes coercion rule names.
+
+
 0.006   2019-07-12  Released-By: PERLANCAR; Urgency: high
+
+        - UPDATE: this release is broken due to non-existing coercion rules. See
+          0.007.
 
 	- Coerce rule: rename str_strip_trailing_slash to
 	  str_strip_slashes, also strip extra slashes like foo//bar ->
