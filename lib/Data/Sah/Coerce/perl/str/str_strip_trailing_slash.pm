@@ -25,7 +25,7 @@ sub coerce {
     $res->{expr_match} = "1";
     $res->{expr_coerce} = join(
         "",
-        "do { (my \$tmp = $dt) =~ s!/\\z!!g; \$tmp }",
+        "do { my \$tmp = $dt; \$tmp =~ s!/+\\z!!g unless \$tmp =~ m!\\A/+\\z!; \$tmp }",
     );
 
     $res;
