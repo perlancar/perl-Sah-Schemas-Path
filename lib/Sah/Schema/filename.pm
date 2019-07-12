@@ -5,9 +5,6 @@ package Sah::Schema::filename;
 
 our $schema = [str => {
     summary => 'Filesystem file name',
-    'x.perl.coerce_rules' => [
-        'str_strip_trailing_slash',
-    ],
     'x.completion' => ['filename'],
 }, {}];
 

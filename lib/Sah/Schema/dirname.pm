@@ -5,9 +5,6 @@ package Sah::Schema::dirname;
 
 our $schema = [str => {
     summary => 'Filesystem directory name',
-    'x.perl.coerce_rules' => [
-        'str_strip_trailing_slash',
-    ],
     'x.completion' => ['dirname'],
 }, {}];
 
