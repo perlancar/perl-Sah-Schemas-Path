@@ -1,4 +1,4 @@
-package Data::Sah::Coerce::perl::To_str::From_str::StripSlashes;
+package Data::Sah::Coerce::perl::To_str::From_str::strip_slashes;
 
 # AUTHOR
 # DATE
