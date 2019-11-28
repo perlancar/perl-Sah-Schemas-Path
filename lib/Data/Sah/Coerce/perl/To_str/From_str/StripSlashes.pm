@@ -1,6 +1,8 @@
-package Data::Sah::Coerce::perl::str::str_strip_slashes;
+package Data::Sah::Coerce::perl::To_str::From_str::StripSlashes;
 
+# AUTHOR
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -10,6 +12,7 @@ use warnings;
 sub meta {
     +{
         v => 4,
+        summary => 'Strip extra and trailing slash from a string',
         prio => 50,
     };
 }
@@ -31,7 +34,7 @@ sub coerce {
 }
 
 1;
-# ABSTRACT: Strip extra and trailing slash from a string
+# ABSTRACT:
 
 =for Pod::Coverage ^(meta|coerce)$
 
