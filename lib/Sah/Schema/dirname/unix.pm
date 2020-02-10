@@ -1,15 +1,16 @@
 package Sah::Schema::dirname::unix;
 
-# AUTHOR
+# AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = ["str" => {
     summary => 'Filesystem directory name on a Unix system',
-    match => '\A(?:/|/?(?:[^/\0]{1,255})(?:/[^/\0]{1,255})?)\z',
-    'x.perl.coerce_rules' => [
-        'From_str::strip_slashes',
+    match => '\A(?:/|/?(?:[^/\0]{1,255})(?:/[^/\0]{1,255})*)\z',
+    prefilters => [
+        'Path::expand_tilde',
+        'Path::strip_slashes',
     ],
 }, {}];
 
