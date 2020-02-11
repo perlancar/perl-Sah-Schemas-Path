@@ -10,6 +10,7 @@ our $schema = [str => {
     'x.completion' => ['dirname'],
     'prefilters' => [
         'Path::expand_tilde_when_on_unix',
+        'Path::strip_slashes_when_on_unix',
     ],
 }, {}];
 
