@@ -1,3 +1,8 @@
+0.013   2020-02-11  Released-By: PERLANCAR; Urgency: medium
+
+	- [bugfix] D'oh, fix filter rule name again.
+
+
 0.012   2020-02-11  Released-By: PERLANCAR; Urgency: medium
 
 	- Tweak/fix filter rule names.
