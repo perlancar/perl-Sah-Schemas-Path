@@ -8,6 +8,7 @@ package Sah::Schema::pathname;
 our $schema = [str => {
     summary => 'Filesystem path name',
     min_len => 1,
+
     'x.completion' => ['filename'],
     'prefilters' => [
         'Path::expand_tilde_when_on_unix',

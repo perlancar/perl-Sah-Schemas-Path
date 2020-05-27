@@ -1,3 +1,10 @@
+0.014   2020-05-27  Released-By: PERLANCAR; Urgency: medium
+
+        - Forbid empty filename/dirname/pathname.
+
+	- Add examples (tests).
+
+
 0.013   2020-02-11  Released-By: PERLANCAR; Urgency: medium
 
 	- [bugfix] D'oh, fix filter rule name again.
