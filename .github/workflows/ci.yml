@@ -1,0 +1,44 @@
+name: CI
+
+on: [push]
+
+jobs:
+  perl-job:
+    runs-on: ubuntu-latest
+    container:
+      image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
+    strategy:
+      fail-fast: false
+      matrix:
+        perl-version:
+          - '5.30'
+#          - '5.32'
+#          - 'latest'
+    name: Perl ${{ matrix.perl-version }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Prepare Dzil config file
+        run: |
+            mkdir ~/.dzil
+            echo '[%User]'                               >> ~/.dzil/config.ini
+            echo 'name  = perlancar'                     >> ~/.dzil/config.ini
+            echo 'email = perlancar@cpan.org'            >> ~/.dzil/config.ini
+            echo '[%Rights]'                             >> ~/.dzil/config.ini
+            echo 'license_class    = Perl_5'             >> ~/.dzil/config.ini
+            echo 'copyright_holder = perlancar@cpan.org' >> ~/.dzil/config.ini
+            cat ~/.dzil/config.ini
+
+      - name: Install dependencies
+        run: |
+            dzil authordeps --missing | cpanm --notest
+            dzil listdeps --author --missing | cpanm --notest
+            cpanm --notest Pod::Weaver::PluginBundle::Author::PERLANCAR
+            cpanm --notest Pod::Weaver::Plugin::Data::Sah::Coerce
+            cpanm --notest Pod::Weaver::Plugin::Sah::Schemas
+            cpanm --notest Test::Perl::Critic
+
+      - name: Regular tests
+        run: |
+            dzil test --no-author
+
