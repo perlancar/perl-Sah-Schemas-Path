@@ -1,6 +1,10 @@
 package Sah::Schemas::Path;
 
+use strict;
+
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 1;
