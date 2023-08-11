@@ -1,5 +1,7 @@
 package Sah::Schema::dirname;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
@@ -39,7 +41,7 @@ _
         {value=>'foo/bar', valid=>1},
     ],
 
-}, {}];
+}];
 
 1;
 # ABSTRACT:

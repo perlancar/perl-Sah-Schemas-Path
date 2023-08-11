@@ -1,5 +1,7 @@
 package Sah::Schema::pathname::unix;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
@@ -23,7 +25,7 @@ our $schema = ["str" => {
         {value=>"foo\0", valid=>0, summary=>"Contains null character"},
     ],
 
-}, {}];
+}];
 
 1;
 # ABSTRACT:

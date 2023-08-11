@@ -1,4 +1,4 @@
-package Sah::Schema::pathnames;
+package Sah::Schema::filenames;
 
 use strict;
 
@@ -8,13 +8,13 @@ use strict;
 # VERSION
 
 our $schema = [array => {
-    summary => 'List of filesystem path names',
+    summary => 'List of filesystem file names',
     description => <<'_',
 
 Coerces from string by expanding the glob pattern in the string.
 
 _
-    of => ['pathname', {req=>1}],
+    of => ['filename', {req=>1}],
     'x.element_completion' => ['filename'],
     'x.perl.coerce_rules' => [
         'From_str::expand_glob',

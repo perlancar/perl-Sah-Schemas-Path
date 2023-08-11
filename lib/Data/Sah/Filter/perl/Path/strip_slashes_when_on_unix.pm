@@ -1,15 +1,15 @@
 package Data::Sah::Filter::perl::Path::strip_slashes_when_on_unix;
 
-# AUTHOR
-# DATE
-# DIST
-# VERSION
-
 use 5.010001;
 use strict;
 use warnings;
 
 use Perl::osnames;
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 sub meta {
     +{
