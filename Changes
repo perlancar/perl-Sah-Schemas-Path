@@ -1,3 +1,8 @@
+0.018   2023-08-14  Released-By: PERLANCAR; Urgency: medium
+
+        - Add schema: pathname::not_exists.
+
+
 0.017   2023-08-11  Released-By: PERLANCAR; Urgency: medium
 
         - Add schemas: {file,dir,path}name::exists, filenames,
