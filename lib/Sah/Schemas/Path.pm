@@ -25,7 +25,7 @@ C<filename>, C<dirname>, C<pathname> are basically the same; they differ in the
 completion they provide, i.e. C<dirname> offers completion of only directory
 names.
 
-Use C<filename::unix>, F<dirname::unix>, F<pathname::unix> only if you want to
+Use C<filename::unix>, C<dirname::unix>, C<pathname::unix> only if you want to
 accept Unix-style path. These schemas contain additional checks that are
 specific to Unix filesystem.
 
