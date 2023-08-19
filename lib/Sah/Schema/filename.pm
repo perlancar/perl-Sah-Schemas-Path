@@ -9,7 +9,7 @@ use strict;
 
 our $schema = [str => {
     summary => 'Filesystem file name',
-    description => <<'_',
+    description => <<'MARKDOWN',
 
 This schema is basically string with some checks and prefilters. Why use this
 schema instead of plain ol' str? Mainly to give you the ability to change tilde
@@ -25,7 +25,7 @@ like `foo//bar` into `foo/bar`.
 What's the difference between this schema and `dirname`? The default completion
 rule. `dirname`'s completion only includes directories and not files.
 
-_
+MARKDOWN
 
     min_len => 1,
 

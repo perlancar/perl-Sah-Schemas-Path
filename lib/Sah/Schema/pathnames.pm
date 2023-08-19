@@ -9,11 +9,11 @@ use strict;
 
 our $schema = [array => {
     summary => 'List of filesystem path names',
-    description => <<'_',
+    description => <<'MARKDOWN',
 
 Coerces from string by expanding the glob pattern in the string.
 
-_
+MARKDOWN
     of => ['pathname', {req=>1}],
     'x.element_completion' => ['filename'],
     'x.perl.coerce_rules' => [
