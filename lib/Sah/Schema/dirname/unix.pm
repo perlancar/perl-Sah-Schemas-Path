@@ -9,6 +9,13 @@ use strict;
 
 our $schema = ["str" => {
     summary => 'Filesystem directory name on a Unix system',
+    description => <<'MARKDOWN',
+
+This is like the `dirname` schema but with extra checks relevant to the Unix,
+(e.g. a path element cannot be longer than 255 characters) and prefilters (e.g.
+multipile consecutive slashes `//` will be normalized into a single one `/`).
+
+MARKDOWN
     match => '\A(?:/|/?(?:[^/\0]{1,255})(?:/[^/\0]{1,255})*)\z',
     'x.completion' => ['dirname'],
     prefilters => [

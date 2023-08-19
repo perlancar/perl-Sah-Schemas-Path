@@ -24,7 +24,7 @@ like `foo//bar` into `foo/bar`.
 
 What's the difference between this schema and `filename` and `dirname`? The
 default completion rule. This schema's completion by default includes
-files as well as directories.
+files as well as directories, while `dirname`'s only include directories.
 
 _
     min_len => 1,

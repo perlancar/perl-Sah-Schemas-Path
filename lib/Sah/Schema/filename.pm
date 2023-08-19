@@ -23,8 +23,7 @@ longer than 255 characters) and preprocessing (e.g. stripping extraneous slashes
 like `foo//bar` into `foo/bar`.
 
 What's the difference between this schema and `dirname`? The default completion
-rule. This schema's completion by default only includes files and not
-directories.
+rule. `dirname`'s completion only includes directories and not files.
 
 _
 
