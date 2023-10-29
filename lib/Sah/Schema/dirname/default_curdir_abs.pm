@@ -31,3 +31,7 @@ _
 
 1;
 # ABSTRACT:
+
+=head1 SEE ALSO
+
+L<Sah::Schema::dirname::default_curdir>
