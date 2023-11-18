@@ -1,3 +1,9 @@
+0.024   2023-11-18  Released-By: PERLANCAR; Urgency: medium
+
+        - Add schemas: filename::{,exists::}default_only_file_in_curdir,
+          dirname::{,exists::}default_only_subdir_in_curdir.
+
+
 0.023   2023-11-18  Released-By: PERLANCAR; Urgency: medium
 
         - Add schemas: {dir,file,path}name::unix::dirname.
