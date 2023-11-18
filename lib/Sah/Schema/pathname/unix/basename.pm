@@ -23,7 +23,7 @@ MARKDOWN
 
     examples => [
         {value=>'', valid=>0},
-        {value=>'/', valid=>1},
+        {value=>'/', valid=>0, summary=>'Contains path symbol'},
         {value=>'foo/bar', valid=>0, summary=>'Contains directory part'},
         {value=>'a' x 256, valid=>0, summary=>'Path element too long'},
         {value=>"foo\0", valid=>0, summary=>"Contains null character"},

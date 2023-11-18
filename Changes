@@ -1,3 +1,8 @@
+0.023   2023-11-18  Released-By: PERLANCAR; Urgency: medium
+
+        - Add schemas: {dir,file,path}name::unix::dirname.
+
+
 0.022   2023-10-29  Released-By: PERLANCAR; Urgency: medium
 
         - Add schema: dirname::default_curdir_abs.
