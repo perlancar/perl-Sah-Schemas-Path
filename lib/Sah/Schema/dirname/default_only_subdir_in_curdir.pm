@@ -23,7 +23,7 @@ return a default value.
 Note: be careful when using this schema for actions that are destructive,
 because a user can perform those actions without giving an argument (e.g. in a
 `delete-files-in` script). It is safer to use this schema when performing a
-non=destructive action (e.g. `ls`) and/or operate in dry-run mode by default.
+non-destructive action (e.g. `ls`) and/or operate in dry-run mode by default.
 
 MARKDOWN
     'x.perl.default_value_rules' => ['Path::only_subdir_in_curdir'],

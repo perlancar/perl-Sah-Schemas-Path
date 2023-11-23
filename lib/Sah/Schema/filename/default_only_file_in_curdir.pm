@@ -23,7 +23,7 @@ not return a default value.
 Note: be careful when using this schema for actions that are destructive,
 because a user can perform those actions without giving an argument (e.g. in a
 `delete-file` script). It is safer to use this schema when performing a
-non=destructive action (e.g. `checksum`) and/or operate in dry-run mode by
+non-destructive action (e.g. `checksum`) and/or operate in dry-run mode by
 default.
 
 MARKDOWN
