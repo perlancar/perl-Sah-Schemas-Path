@@ -1,4 +1,4 @@
-package Data::Sah::Value::perl::Path::only_subdir_in_curdir;
+package Data::Sah::Value::perl::Path::only_subdir_not_file_in_curdir;
 
 use 5.010001;
 use strict;
@@ -12,7 +12,7 @@ use warnings;
 sub meta {
     +{
         v => 1,
-        summary => 'Only subdirectory in current directory',
+        summary => 'Only subdirectory in current directory (plain files are ignored)',
         description => <<'MARKDOWN',
 
 This default value rule will return filename if there is a single subdirectory
