@@ -1,3 +1,8 @@
+0.025   2023-11-23  Released-By: PERLANCAR; Urgency: medium
+
+        - Add schema: filename::default_only_file_not_dir_in_curdir.
+
+
 0.024   2023-11-18  Released-By: PERLANCAR; Urgency: medium
 
         - Add schemas: filename::{,exists::}default_only_file_in_curdir,
