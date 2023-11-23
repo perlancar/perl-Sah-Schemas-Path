@@ -1,4 +1,4 @@
-package Sah::Schema::dirname::default_only_subdir_in_curdir;
+package Sah::Schema::dirname::default_only_subdir_not_file_in_curdir;
 
 use strict;
 
@@ -8,17 +8,17 @@ use strict;
 # VERSION
 
 our $schema = ["dirname" => {
-    summary => 'Directory name, defaults to only subdirectory in current directory (if there is one)',
+    summary => 'Directory name, defaults to only subdirectory in current directory (if there is one) (files ignored)',
     description => <<'MARKDOWN',
 
 This is like the `dirname` schema but with a default value of "only subdirectory
 in the current directory". That is, if the current directory has a single
-subdirectory and nothing else.
+subdirectory and nothing else (plain files are ignored).
 
-Difference with `dirname::default_only_subdir_not_file_in_subdir` schema: the
-other schema ignores plain files. Thus, if a directory only contains `file1` and
-`subdir1`, then that other schema will return `subdir1` but this schema will not
-return a default value.
+Difference with `dirname::default_only_subdir_in_subdir` schema: the other
+schema does not ignore plain files. Thus, if a directory only contains `file1`
+and `subdir1`, then that other schema will not return `subdir1` but this schema
+will.
 
 Note: be careful when using this schema for actions that are destructive,
 because a user can perform those actions without giving an argument (e.g. in a
