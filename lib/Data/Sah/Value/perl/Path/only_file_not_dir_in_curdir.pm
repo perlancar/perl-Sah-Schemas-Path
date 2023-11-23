@@ -1,4 +1,4 @@
-package Data::Sah::Value::perl::Path::only_file_in_curdir;
+package Data::Sah::Value::perl::Path::only_file_not_dir_in_curdir;
 
 use 5.010001;
 use strict;
