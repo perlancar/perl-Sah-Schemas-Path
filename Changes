@@ -1,3 +1,11 @@
+0.029   2024-01-08  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+        - [dist] Tweak definition of Sah::Schema modules
+          (Pod::Weaver::Plugin::Sah::Schemas 0.076).
+
+
 0.028   2024-01-08  Released-By: PERLANCAR; Urgency: low
 
         - No functional changes.
