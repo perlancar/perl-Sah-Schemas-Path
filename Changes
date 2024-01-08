@@ -1,8 +1,16 @@
+0.030   2024-01-08  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+        - [dist] [build] Fix links to completion rule module
+          (Pod::Weaver::Plugin::Sah::Schemas 0.077).
+
+
 0.029   2024-01-08  Released-By: PERLANCAR; Urgency: low
 
         - No functional changes.
 
-        - [dist] Tweak definition of Sah::Schema modules
+        - [dist] [build] Tweak definition of Sah::Schema modules
           (Pod::Weaver::Plugin::Sah::Schemas 0.076).
 
 
