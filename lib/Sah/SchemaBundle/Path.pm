@@ -1,4 +1,4 @@
-package Sah::Schemas::Path;
+package Sah::SchemaBundle::Path;
 
 use strict;
 

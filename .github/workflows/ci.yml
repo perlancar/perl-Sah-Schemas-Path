@@ -35,10 +35,9 @@ jobs:
             dzil listdeps --author --missing | cpanm --notest
             cpanm --notest Pod::Weaver::PluginBundle::Author::PERLANCAR
             cpanm --notest Pod::Weaver::Plugin::Data::Sah::Coerce
-            cpanm --notest Pod::Weaver::Plugin::Sah::Schemas
+            cpanm --notest Pod::Weaver::Plugin::Sah::SchemaBundle
             cpanm --notest Test::Perl::Critic
 
       - name: Regular tests
         run: |
             dzil test --no-author
-
